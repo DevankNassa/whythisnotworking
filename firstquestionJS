@@ -1,0 +1,23 @@
+https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/find-the-longest-word-in-a-string
+
+This question why not working ????
+
+function findLongestWordLength(str) {
+  let count = 0;
+  let maxLen = 0;
+  let strA = " ";
+  for (let i = 0; i < str.length; i++) {
+    count++;
+    // console.log(strA[0] + "here")
+    if (str[i] == strA[0]) {
+      if (maxLen < count) {
+        maxLen = count;
+      }
+      count = 0;
+    }
+  }
+  console.log(maxLen)
+  return maxLen;
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
